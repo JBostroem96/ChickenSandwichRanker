@@ -11,7 +11,7 @@
     @endif
 
     <form method="POST" action="{{ route('login') }}" 
-          class="border-2 border-brandOrange text-brandOrange font-bold p-6 rounded-lg">
+        class="border-2 border-brandOrange text-brandOrange font-bold p-6 rounded-lg">
         @csrf
 
         <div class="mb-4">
@@ -34,8 +34,7 @@
                 <p class="mt-2 text-red-500 text-sm">{{ $message }}</p>
             @enderror
         </div>
-
-        
+ 
         <div class="flex items-center mt-4">
             <input id="remember_me" type="checkbox"
                    class="rounded border-orange-300 text-orange-600 shadow-sm focus:ring-orange-500"
@@ -45,7 +44,6 @@
             </label>
         </div>
 
-        
         <div class="flex items-center justify-between mt-6">
             @if (Route::has('password.request'))
                 <a class="underline text-blue-500 text-lg hover:text-orange-700 font-bold"
